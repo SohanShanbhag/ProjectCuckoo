@@ -1,0 +1,149 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <title>Project Cuckoo</title>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
+
+        <script src="p5.play.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <link rel="stylesheet" type="text/css" href="classes.css"/>
+    </head>
+
+    <body class="module">
+        <h1 style="font-size:50px; font-family:Verdana, Geneva, Tahoma, sans-serif; text-align:center"><b>Project Cuckoo</b></h1>
+        <button class="button" onclick="playAudio(audio1)" >Play Audio 1</button>
+        <button class="button" onclick="pauseAudio(audio1)" >Pause Audio 1</button>
+        <button class="button" onclick="restartAudio(audio1)" >Restart Audio 1</button>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <button class="button" onclick="playAudio(audio2)" >Play Audio 2</button>
+        <button class="button" onclick="pauseAudio(audio2)" >Pause Audio 2</button>
+        <button class="button" onclick="restartAudio(audio2)" >Restart Audio 2</button>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <button class="button" onclick="playAudio(audio3)" >Play Audio 3</button>
+        <button class="button" onclick="pauseAudio(audio3)" >Pause Audio 3</button>
+        <button class="button" onclick="restartAudio(audio3)" >Restart Audio 3</button>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <button class="button" onclick="playAudio(audio4)" >Play Audio 4</button>
+        <button class="button" onclick="pauseAudio(audio4)" >Pause Audio 4</button>
+        <button class="button" onclick="restartAudio(audio4)" >Restart Audio 4</button>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <button class="button" onclick="playAudio(audio5)" >Play Audio 5</button>
+        <button class="button" onclick="pauseAudio(audio5)" >Pause Audio 5</button>
+        <button class="button" onclick="restartAudio(audio5)" >Restart Audio 5</button>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <button class="button" onclick="playAudio(audio6)" >Play Audio 6</button>
+        <button class="button" onclick="pauseAudio(audio6)" >Pause Audio 6</button>
+        <button class="button" onclick="restartAudio(audio6)" >Restart Audio 6</button>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <button class="button" onclick="playAudio(audio7)" >Play Audio 7</button>
+        <button class="button" onclick="pauseAudio(audio7)" >Pause Audio 7</button>
+        <button class="button" onclick="restartAudio(audio7)" >Restart Audio 7</button>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <button class="button" onclick="playAudio(audio8)" >Play Audio 8</button>
+        <button class="button" onclick="pauseAudio(audio8)" >Pause Audio 8</button>
+        <button class="button" onclick="restartAudio(audio8)" >Restart Audio 8</button>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <button class="button" onclick="playAudio(audio9)" >Play Audio 9</button>
+        <button class="button" onclick="pauseAudio(audio9)" >Pause Audio 9</button>
+        <button class="button" onclick="restartAudio(audio9)" >Restart Audio 9</button>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <button class="button" onclick="playAudio(audio10)" >Play Audio 10</button>
+        <button class="button" onclick="pauseAudio(audio10)" >Pause Audio 10</button>
+        <button class="button" onclick="restartAudio(audio10)" >Restart Audio 10</button>
+
+        <audio id="audio1">
+            <source src="audios/a1.mp3">
+        </audio>
+        <audio id="audio2">
+            <source src="audios/a2.mp3">
+        </audio>
+        <audio id="audio3">
+            <source src="audios/a3.mp3">
+        </audio>
+        <audio id="audio4">
+            <source src="audios/a4.mp3">
+        </audio>
+        <audio id="audio5">
+            <source src="audios/a5.mp3">
+        </audio>
+        <audio id="audio6">
+            <source src="audios/a6.mp3">
+        </audio>
+        <audio id="audio7">
+            <source src="audios/a7.mp3">
+        </audio>
+        <audio id="audio8">
+            <source src="audios/a8.mp3">
+        </audio>
+        <audio id="audio9">
+            <source src="audios/a9.mp3">
+        </audio>
+        <audio id="audio10">
+            <source src="audios/a10.mp3">
+        </audio>
+
+        <script>
+            function playAudio(audio){
+                audio.play();
+            }
+
+            function pauseAudio(audio){
+                audio.pause();
+            }
+
+            function restartAudio(audio){
+                audio.currentTime = 0;
+            }
+        </script>
+    </body>
+</html>
